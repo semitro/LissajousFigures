@@ -1,0 +1,53 @@
+.label{
+    -fx-font-family: ubuntu;
+    -fx-pref-width: 100%;
+    -fx-font-size: 125%;
+}
+
+
+.signalInput .text-field{
+    -fx-border-style: none;
+    -fx-background-color: transparent;
+    -fx-pref-width: 42px;
+}
+
+.signalInput .label{
+    -fx-border-style: none;
+    -fx-background-color: transparent;
+    -fx-pref-width: 42px;
+}
+
+.chart{
+    -fx-animated: false;
+    -fx-max-height: 500;
+    -fx-max-width:  500;
+}
+
+.chart-series-line{
+    -fx-stroke: transparent;
+
+}
+
+.chart-line-symbol{
+    -fx-stroke: darkblue;
+    -fx-background-color: darkblue;
+    -fx-scale-x: 1.1px;
+    -fx-scale-y: 1.1px;
+
+}
+.chart-plot-background {
+    -fx-background-color: #e2ecfe;
+}
+.chart-vertical-grid-lines {
+    -fx-stroke: #3278fa;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: #3278fa;
+    -fx-pref-columns: 1;
+
+}
+.chart-alternative-row-fill {
+    -fx-fill: #99bcfd;
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}

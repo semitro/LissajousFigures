@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import vt.smt.ObservableSeriesPlot?>
+
+<BorderPane prefHeight="450" prefWidth="450" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.112"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="vt.smt.Controller">
+
+    <center>
+        <ObservableSeriesPlot fx:id="plot">
+        </ObservableSeriesPlot>
+    </center>
+    <bottom>
+        <VBox styleClass="signalInput">
+            <HBox>
+                <Label text="Signal one:" minWidth="90" />
+                <TextField text="A" fx:id="amplitudeField1"/>
+                <Label text="sin(" />
+                <TextField text="ω" fx:id="freqField1" minWidth="80" />
+                <Label text="t + " />
+                <TextField text="φ" fx:id="phazeField1" minWidth="45"/>
+                <Label text=")" />
+            </HBox>
+            <HBox>
+                <Label text="Signal two:" minWidth="90" />
+                <TextField text="A" fx:id="amplitudeField2" />
+                <Label text="sin(" />
+                <TextField text="ω" fx:id="freqField2" minWidth="80"/>
+                <Label text="t + " />
+                <TextField text="φ" fx:id="phazeField2" minWidth="45"/>
+                <Label text=")" />
+            </HBox>
+        </VBox>
+    </bottom>
+
+
+</BorderPane>
